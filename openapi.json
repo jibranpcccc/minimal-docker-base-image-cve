@@ -1,0 +1,30 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "TinyContainerHQ API",
+    "version": "1.0.0",
+    "description": "Chainguard vs Alpine Zero-CVE Docker Benchmark, Distroless Security & Scratch Multi-Stage",
+    "contact": {
+      "name": "TinyContainerHQ",
+      "url": "https://tinycontainerhq.pages.dev/"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://tinycontainerhq.pages.dev/",
+      "description": "Production Edge"
+    }
+  ],
+  "paths": {
+    "/api/v1/health": {
+      "get": {
+        "summary": "Healthcheck",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}
